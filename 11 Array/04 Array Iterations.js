@@ -26,3 +26,9 @@ console.log('Looping through the fruits array using the forEach() method:');
 fruits.forEach((fruit, index) => {
     console.log(`Index ${index}: ${fruit}`);
 });
+//4. Using the forEach() method with the array parameter
+console.log("-".repeat(20) + 'Looping through Arrays using forEach() method with array parameter' + "-".repeat(20));
+console.log('Looping through the fruits array using the forEach() method with the array parameter:');
+fruits.forEach((fruit, index, fruitsArray) => {
+    console.log(`${fruit} is at index ${index} in the array:`, fruitsArray);
+});
