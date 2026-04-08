@@ -16,3 +16,17 @@ console.log('My Map:', myMap);
 
 let numbers =[42, 23, 16, 15, 8, 4];
 numbers.filter(num=> num % 2 === 0).map(num => num * 2).forEach(num => console.log(num));
+
+//2. Map has  key-value pairs, so we can use the map() method to transform the values in the Map
+console.log("-".repeat(20) + 'Using the map() method to Transform Values in a Map' + "-".repeat(20));
+let exampleMap = new Map();
+exampleMap.set(1, 'one');
+exampleMap.set(2, 'two');
+exampleMap.set('three', 'three');
+console.log('Original Map:', exampleMap);
+
+//3. iterating through a Map using forEach() method
+console.log("-".repeat(20) + 'Iterating through a Map using forEach() method' + "-".repeat(20));
+exampleMap.forEach((value, key) => {
+    console.log(`Key: ${key}, Value: ${value}`);
+});
